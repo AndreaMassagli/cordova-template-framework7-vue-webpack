@@ -2,6 +2,21 @@
 	user-select: none;
 }
 
+html, body {
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+html.with-statusbar-overlay .framework7-root {
+	padding-top: 0;
+}
+
+body {
+	padding-top: constant(safe-area-inset-top);
+	padding-bottom: constant(safe-area-inset-bottom);
+}
+
 input {
 	user-select: element !important;
 }
